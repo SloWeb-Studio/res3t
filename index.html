@@ -113,13 +113,13 @@ nav{
 
 /* ── FLIP CARDS ── */
 .flip-wrap{aspect-ratio:2/3;perspective:1000px;cursor:pointer;-webkit-tap-highlight-color:transparent;}
-.flip-inner{width:100%;height:100%;position:relative;transform-style:preserve-3d;transition:transform .65s cubic-bezier(.4,0,.2,1);}
+.flip-inner{width:100%;height:100%;position:relative;transform-style:preserve-3d;-webkit-transform-style:preserve-3d;transition:transform .65s cubic-bezier(.4,0,.2,1);will-change:transform;}
 /* Desktop: hover flips. Mobile: tap flips */
 @media(hover:hover){.flip-wrap:hover .flip-inner{transform:rotateY(180deg);}}
 .flip-wrap.flipped .flip-inner{transform:rotateY(180deg);}
-.ff,.fb{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden;}
+.ff,.fb{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden;background:#0a0808;}
 .fb{transform:rotateY(180deg);}
-.ff{border:1px solid var(--border);display:flex;flex-direction:column;justify-content:flex-end;background:#0a0808;}
+.ff{border:1px solid var(--border);display:flex;flex-direction:column;justify-content:flex-end;background:#0a0808;backface-visibility:hidden;-webkit-backface-visibility:hidden;transform:rotateY(0deg);}
 .ff-bg{
   position:absolute;inset:0;
   background-size:cover,700px auto;background-position:center,0 0;background-repeat:no-repeat,repeat;

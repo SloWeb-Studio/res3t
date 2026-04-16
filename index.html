@@ -446,7 +446,7 @@ function openGal(i){
   document.getElementById('gmDate').textContent=ev.date;
   var c=document.getElementById('gmPhotos');c.innerHTML='';
   var base='images/dogodki/'+ev.folder+'/';
-  if(ev.photos>0){for(var j=1;j<=ev.photos;j++){var d=document.createElement('div');d.className='gm-photo';d.style.backgroundImage="url('"+base+j+".JPG')";d.style.backgroundSize='cover';d.style.backgroundPosition='center';c.appendChild(d);}}
+  if(ev.photos>0){for(var j=1;j<=ev.photos;j++){var d=document.createElement('div');d.className='gm-photo';d.style.backgroundImage="url('"+base+j+".jpg')";d.style.backgroundSize='cover';d.style.backgroundPosition='center';c.appendChild(d);}}
   else{var note=document.createElement('p');note.className='gm-note';note.textContent='Fotografije bodo dodane kmalu.';c.appendChild(note);}
   document.getElementById('galModal').classList.add('open');document.body.style.overflow='hidden';
 }

@@ -325,6 +325,16 @@ footer{border-top:1px solid var(--border);background:var(--bg);padding:1.8rem 0;
       <div class="gc-grad"></div><div class="gc-tl"></div><div class="gc-br"></div>
       <div class="gc-info"><span class="gc-date">2. Maj 2026</span><div class="gc-name">67 Trap Party</div><span class="gc-hint">Galerija &rsaquo;</span></div>
     </div>
+    <div class="gal-card" onclick="openGal(9)">
+      <div class="gc-img" style="background-image:url('images/dogodki/8.5.26/cover.PNG'),var(--pat);"></div>
+      <div class="gc-grad"></div><div class="gc-tl"></div><div class="gc-br"></div>
+      <div class="gc-info"><span class="gc-date">8. Maj 2026</span><div class="gc-name">Lomim Čaše</div><span class="gc-hint">Galerija &rsaquo;</span></div>
+    </div>
+    <div class="gal-card" onclick="openGal(10)">
+      <div class="gc-img" style="background-image:url('images/dogodki/9.5.26/cover.JPG'),var(--pat);"></div>
+      <div class="gc-grad"></div><div class="gc-tl"></div><div class="gc-br"></div>
+      <div class="gc-info"><span class="gc-date">9. Maj 2026</span><div class="gc-name">Favela Fusion</div><span class="gc-hint">Galerija &rsaquo;</span></div>
+    </div>
   </div>
   <p style="margin-top:1.2rem;font-family:'Cinzel',serif;font-size:.42rem;letter-spacing:.25em;text-transform:uppercase;color:var(--muted);">Fotografije se dodajo po vsakem dogodku.</p>
 </div></section>
@@ -347,7 +357,9 @@ var evData=[
   {name:"Latin America",date:"25. April 2026",folder:"25.4.26",photos:37},
   {name:"Favela Fusion",date:"30. April 2026",folder:"30.4.26",photos:24},
   {name:"1€ Balkanjada",date:"1. Maj 2026",folder:"1.5.26",photos:38},
-  {name:"67 Trap Party",date:"2. Maj 2026",folder:"2.5.26",photos:54}
+  {name:"67 Trap Party",date:"2. Maj 2026",folder:"2.5.26",photos:54},
+  {name:"Lomim Čaše",date:"8. Maj 2026",folder:"8.5.26",photos:16},
+  {name:"Favela Fusion",date:"9. Maj 2026",folder:"9.5.26",photos:45}
 ];
 function openGal(i){
   var ev=evData[i];if(!ev.name)return;

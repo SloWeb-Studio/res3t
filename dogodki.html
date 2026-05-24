@@ -345,6 +345,21 @@ footer{border-top:1px solid var(--border);background:var(--bg);padding:1.8rem 0;
       <div class="gc-grad"></div><div class="gc-tl"></div><div class="gc-br"></div>
      <div class="gc-info"><span class="gc-date">16. Maj 2026</span><div class="gc-name">Link Up</div><span class="gc-hint">Galerija &rsaquo;</span></div>
     </div>
+    <div class="gal-card" onclick="openGal(13)">
+      <div class="gc-img" style="background-image:url('images/dogodki/21.5.26/cover.png'),var(--pat);"></div>
+      <div class="gc-grad"></div><div class="gc-tl"></div><div class="gc-br"></div>
+      <div class="gc-info"><span class="gc-date">21. Maj 2026</span><div class="gc-name">Favela Fusion</div><span class="gc-hint">Galerija &rsaquo;</span></div>
+    </div>
+    <div class="gal-card" onclick="openGal(14)">
+      <div class="gc-img" style="background-image:url('images/dogodki/22.5.26/cover.png'),var(--pat);"></div>
+      <div class="gc-grad"></div><div class="gc-tl"></div><div class="gc-br"></div>
+      <div class="gc-info"><span class="gc-date">22. Maj 2026</span><div class="gc-name">Kada Svane</div><span class="gc-hint">Galerija &rsaquo;</span></div>
+    </div>
+    <div class="gal-card" onclick="openGal(15)">
+      <div class="gc-img" style="background-image:url('images/dogodki/23.5.26/cover.png'),var(--pat);"></div>
+     <div class="gc-grad"></div><div class="gc-tl"></div><div class="gc-br"></div>
+     <div class="gc-info"><span class="gc-date">23. Maj 2026</span><div class="gc-name">Girls 2€ Party</div><span class="gc-hint">Galerija &rsaquo;</span></div>
+    </div>
   </div>
   <p style="margin-top:1.2rem;font-family:'Cinzel',serif;font-size:.42rem;letter-spacing:.25em;text-transform:uppercase;color:var(--muted);">Fotografije se dodajo po vsakem dogodku.</p>
 </div></section>
@@ -371,7 +386,10 @@ var evData=[
   {name:"Lomim Čaše",date:"8. Maj 2026",folder:"8.5.26",photos:16},
   {name:"Favela Fusion",date:"9. Maj 2026",folder:"9.5.26",photos:45},
   {name:"Space Invasion",date:"15. Maj 2026",folder:"15.5.26",photos:75},
-  {name:"Link Up",date:"16. Maj 2026",folder:"16.5.26",photos:49}
+  {name:"Link Up",date:"16. Maj 2026",folder:"16.5.26",photos:49},
+  {name:"Favela Fusion",date:"21. Maj 2026",folder:"21.5.26",photos:0},
+  {name:"Kada Svane",date:"22. Maj 2026",folder:"22.5.26",photos:0},
+  {name:"Girls 2€ Party",date:"23. Maj 2026",folder:"23.5.26",photos:0}
 ];
 function openGal(i){
   var ev=evData[i];if(!ev.name)return;

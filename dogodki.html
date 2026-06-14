@@ -380,6 +380,16 @@ footer{border-top:1px solid var(--border);background:var(--bg);padding:1.8rem 0;
      <div class="gc-grad"></div><div class="gc-tl"></div><div class="gc-br"></div>
      <div class="gc-info"><span class="gc-date">6. Jun 2026</span><div class="gc-name">Link Up</div><span class="gc-hint">Galerija &rsaquo;</span></div>
     </div>
+    <div class="gal-card" onclick="openGal(20)">
+     <div class="gc-img" style="background-image:url('images/dogodki/12.6.26/cover.PNG'),var(--pat);"></div>
+      <div class="gc-grad"></div><div class="gc-tl"></div><div class="gc-br"></div>
+      <div class="gc-info"><span class="gc-date">12. Jun 2026</span><div class="gc-name">2€ Sumemr Party</div><span class="gc-hint">Galerija &rsaquo;</span></div>
+    </div>
+    <div class="gal-card" onclick="openGal(21)">
+      <div class="gc-img" style="background-image:url('images/dogodki/13.6.26/cover.PNG'),var(--pat);"></div>
+      <div class="gc-grad"></div><div class="gc-tl"></div><div class="gc-br"></div>
+      <div class="gc-info"><span class="gc-date">13. Jun 2026</span><div class="gc-name">Love Island Party</div><span class="gc-hint">Galerija &rsaquo;</span></div>
+    </div>
   </div>
   <p style="margin-top:1.2rem;font-family:'Cinzel',serif;font-size:.42rem;letter-spacing:.25em;text-transform:uppercase;color:var(--muted);">Fotografije se dodajo po vsakem dogodku.</p>
 </div></section>
@@ -414,6 +424,8 @@ var evData=[
   {name:"Saturday Fever",date:"30. Maj 2026",folder:"30.5.26",photos:0},
   {name:"Old vs New Balkan",date:"5. Junij 2026",folder:"5.6.26",photos:0},
   {name:"Link Up",date:"6. Junij 2026",folder:"6.6.26",photos:0}
+  {name:"2€ Summer Party",date:"12. Junij 2026",folder:"12.6.26",photos:0},
+  {name:"Love Island Party",date:"13. Junij 2026",folder:"13.6.26",photos:0}
 ];
 function openGal(i){
   var ev=evData[i];if(!ev.name)return;
